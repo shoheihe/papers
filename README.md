@@ -10,7 +10,14 @@ Webデータや誤ラベルを含むノイズデータから学習するため�
 **</div></details>**
 
 **文献一覧：**
-[1] P. Welinder et al., *The multidimensional wisdom of crowds*, NIPS, 2010.  
+<details>
+  <summary>
+    P. Welinder et al., *The multidimensional wisdom of crowds*, NIPS, 2010. 
+  </summary>
+  <div>
+    crowdでデータ集める手法について
+  </div>
+</details>
 [2] Y. Yan et al., *Learning from multiple annotators*, JMLR, 2014.  
 [3] X. Chen et al., *NEIL: Extracting visual knowledge from web data*, ICCV, 2013.  
 [4] F. Schroff et al., *Harvesting image databases from the web*, TPAMI, 2011.  
