@@ -2,7 +2,7 @@
 
 ---
 
-## ① ノイズデータ学習・ロバスト学習（Learning with Noisy or Web Data）
+## ① ノイズデータ学習
 
 **文献一覧：**
 
@@ -84,7 +84,7 @@ ImageNetと対応する大規模Web画像データセット「WebVision」を公
 
 ---
 
-## ② 表現学習・一般化・自己教師あり学習（Representation & Generalization Learning）
+## ② 表現学習
 
 **文献一覧：**
 
@@ -118,7 +118,7 @@ ImageNetと対応する大規模Web画像データセット「WebVision」を公
 
 ---
 
-## ③ 機械的忘却・プライバシー保護（Machine Unlearning & Data Privacy）
+## ③ アンラーニング
 
 **文献一覧：**
 
@@ -148,7 +148,7 @@ GDPR違反の典型例を7つに分類し、プライバシー準拠設計の重
 
 ---
 
-## ④ 知識蒸留・知識転移（Knowledge Distillation & Transfer）
+## ④ 知識蒸留
 
 **文献一覧：**
 
