@@ -82,7 +82,7 @@ ImageNetと対応する大規模Web画像データセット「WebVision」を公
 
 ---
 
-## 表現学習
+## 特徴表現学習
 
 **文献一覧：**
 
@@ -144,21 +144,27 @@ GDPRの背景と目的を論じ、個人データの制御権をユーザに返�
 GDPR違反の典型例を7つに分類し、プライバシー準拠設計の重要性を論じる。
 </div></details>
 
----
 
-## 継続学習
+<details><summary>Y. Kuwana, Y. Goto, T. Shibata, G. Irie, Black-Box Forgetting, Advances in Neural Information Processing Systems (NeurIPS), 2024.</summary><div>
+汎用的な大規模モデル（CLIP）から，モデルの中身がわからないBalck-Box環境で，特定のタスクに特化するモデルを作成するのが目的．任意のクラスを忘却することで目的を達成．適切な入力プロンプトの学習を行う．トークン間の共有特徴をまとめて学習パラメータの削減．Whiter-Boxと比肩する性能を達成．
+</div></details>
+
+
+
+---
 
 
 ## LLM，言語学
 **文献一覧：**
 
-<details><summarydetails><summary>R. Kang et al., *Is CLIP ideal? No. Can we fix it? Yes!*, ICCV 2025.</summary><div>
+<details><summary>R. Kang et al., *Is CLIP ideal? No. Can we fix it? Yes!*, ICCV 2025.</summary><div>
 CLIPの埋め込み空間について，言語核の視点を踏まえて複雑な位置関係や否定関係を表すことが不可能と数学的にあらわし証明．パッチとテキストのコサイン類似度を総当たりでマップを作成し，マップを用いたスコアリング手法を提案．著者が作成したデータセットで評価．全体の精度が低下してしまっている．
 </div></details>
  
 <details><summary>G. Nikolaou et al., *Language Models are Injective and Hence Invertible*, preprint, 2025.</summary><div>
 LLMが単射であることを証明し，その主張から埋め込み表現から入力が復元可能であることを数学的に証明．実用的な時間での入力復元アルゴリズムの提案．トークンごとに復元し，総当たりで復元してくと時間がかかるので勾配からありえそうなトークンから確かめることで復元時間の短縮を達成． </div></details>
  
+ ---
 
 ## 知識蒸留
 
@@ -167,3 +173,27 @@ LLMが単射であることを証明し，その主張から埋め込み表現�
 <details><summary>J. Gou et al., *Knowledge distillation: a survey*, IJCV, 2021.</summary><div>
 大規模モデルの知識を小規模モデルに転移する技術を体系的に整理し、分類と課題をまとめた総説。
 </div></details>
+
+---
+
+## Incremental-Lerning
+
+**文献一覧：**
+
+<details><summary>G. M. van de Ven, T. Tuytelaars, A. S. Tolias, Three types of incremental learning, Nature Machine Intelligence, 2022.</summary><div>
+散見されたIncremental-Learningの実験方式を①Domain Incremental Learning, ②Task Incremental Learning, ③Class Incremental Learningの3つに大別している．
+</div></details>
+
+### ・Class Incremental Learning
+
+<details><summary>D.-W. Zhou, H.-L. Sun, H.-J. Ye, D.-C. Zhan, Expandable Subspace Ensemble for Pre-Trained Model-Based Class-Incremental Learning, CVPR, 2024.</summary><div>
+Pre-Trained ModelとAdapterを使用した，特徴空間上のクラス重心を更新する手法．データ学習後に過去データで学習したadapter上のクラス重心との類似度から学習データのないクラスでも疑似補完．分類器は，クラス重心との類似度のマックス．データごとにAdapterを追加するためにメモリコスト懸念．
+</div></details>
+
+<details><summary>M. D. McDonnell, D. Gong, A. Parveneh, E. Abbasnejad, A. van den Hengel, RanPAC: Random Projections and Pre-trained Models for Continual Learning, NeurIPS, 2023.</summary><div>Pre-trained ModelをFrreze, 特徴量を使用しAdapterを学習．ここでRandom Pojectionを利用することで，特徴空間の分離性を高める．頻繁に比較手法で用いられる．DIL, CILで高精度．
+</div></details>
+
+<details><summary>X. Yang, G. Lai, D. Meng, X. M. Cao, X. Yang, RACE: Robust adaptive and clustering elimination for noisy labels in continual learning, Knowledge-Based Systems, 2025.</summary><div>CILにノイジーラベルを導入したもの．D^1の学習、Parameter-Efficient Transfer Learning(PETL)において，の維持らーべる学習に適した損失関数の提案．加えてBIRCHを利用したクラスタリングにより，多数決による疑似ラベルの付与．おそらくRanpacの拡張の認識．Real world Datasetでも検証．CILでは最良．DIvideMixなどのNLL手法とnon-countinual設定では精度が高いものの勝つことは厳しい．
+</div></details>
+
+---
