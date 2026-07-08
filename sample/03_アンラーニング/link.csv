@@ -1,0 +1,8 @@
+"タイトル","学会.年度","paperリンク","codeリンク"
+"NeurIPS 2023 - Machine Unlearning Competition","NeurIPS, 2023","https://unlearning-challenge.github.io/","https://github.com/unlearning-challenge/starting-kit"
+"The EU proposal for a general data protection regulation","CLSR, 2013","https://doi.org/10.1016/j.clsr.2013.05.006","Null"
+"Towards unbounded machine unlearning","arXiv, 2023","https://arxiv.org/abs/2302.09880","Null"
+"Bill AB-375 (CCPA)","California State Legislature, 2017","https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB375","Null"
+"Announcement on online reputation","Office of the Privacy Commissioner of Canada, 2018","https://www.priv.gc.ca/en/opc-news/news-and-announcements/2018/nr-c_180126/","Null"
+"The seven sins of personal-data processing systems under GDPR","USENIX, 2019","https://arxiv.org/abs/1903.09305","Null"
+"Black-Box Forgetting","NeurIPS, 2024","https://arxiv.org/abs/2411.00409","https://github.com/yusukekwn/Black-Box-Forgetting"

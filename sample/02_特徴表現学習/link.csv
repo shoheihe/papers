@@ -1,0 +1,8 @@
+"タイトル","学会.年度","paperリンク","codeリンク"
+"Understanding deep learning requires rethinking generalization","ICLR, 2017","https://arxiv.org/abs/1611.03530","Null"
+"A closer look at memorization in deep networks","ICML, 2017","https://arxiv.org/abs/1706.05394","Null"
+"SimCLR","ICML, 2020","https://arxiv.org/abs/2002.05709","https://github.com/google-research/simclr"
+"SimSiam","CVPR, 2021","https://arxiv.org/abs/2011.10566","https://github.com/facebookresearch/simsiam"
+"Negative Correlation-Steered Latent Contrastive Learning","CVPR, 2022","Null","Null"
+"mixup","arXiv, 2017","https://arxiv.org/abs/1710.09412","https://github.com/facebookresearch/mixup-cifar10"
+"t-SNE","JMLR, 2008","https://www.jmlr.org/papers/v9/vandermaaten08a.html","https://lvdmaaten.github.io/tsne/"
